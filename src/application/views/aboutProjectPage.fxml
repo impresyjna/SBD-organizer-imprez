@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextArea layoutX="8.0" layoutY="23.0" prefHeight="550.0" prefWidth="750.0" text="Projekt ma za zadanie umożliwić osobom zajmującym się organizacją imprez znalezienie potrzebnych im przedsiębiorców i łatwiejszy kontakt z nimi w celu umówienia detali. &#10;Dodatkowo projekt ma za zadanie stanowić idealne miejsce dla wszystkich przedsiębiorców do zareklamowania się. " wrapText="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+      <TextArea editable="false" layoutX="8.0" layoutY="23.0" prefHeight="464.0" prefWidth="750.0" text="Projekt ma za zadanie umożliwić osobom zajmującym się organizacją imprez znalezienie potrzebnych im przedsiębiorców i łatwiejszy kontakt z nimi w celu umówienia detali. &#10;Dodatkowo projekt ma za zadanie stanowić idealne miejsce dla wszystkich przedsiębiorców do zareklamowania się. " wrapText="true" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
          <font>
             <Font size="29.0" />
          </font>
       </TextArea>
+      <Button layoutX="25.0" layoutY="510.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="92.0" text="Cofnij" />
    </children>
 </AnchorPane>
