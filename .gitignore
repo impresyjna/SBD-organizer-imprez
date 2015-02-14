@@ -1,0 +1,14 @@
+*.class
+bin/application/views/aboutProjectPage.fxml
+bin/application/views/fillDatesPage.fxml
+bin/application/views/fillOfferPage.fxml
+bin/application/views/loginPage.fxml
+bin/application/views/myOffersPage.fxml
+bin/application/views/myPartiesPage.fxml
+bin/application/views/organisePage.fxml
+bin/application/views/registerPage.fxml
+bin/application/views/requestsFromCustomersPage.fxml
+bin/application/views/searchPage.fxml
+bin/application/views/unregisterFirstPage.fxml
+bin/application/views/welcomePage.fxml
+*.jar
