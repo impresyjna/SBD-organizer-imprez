@@ -12,3 +12,10 @@ bin/application/views/searchPage.fxml
 bin/application/views/unregisterFirstPage.fxml
 bin/application/views/welcomePage.fxml
 *.jar
+bin/application/views/bandSearchPage.fxml
+bin/application/views/cateringSearchPage.fxml
+bin/application/views/otherSearchPage.fxml
+bin/application/views/photographSearchPage.fxml
+bin/application/views/photographSearchPage.fxml
+bin/application/views/restorerSearchPage.fxml
+bin/application/views/photographSearchPage.fxml
