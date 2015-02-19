@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.companyFirstPageController">
+   <children>
+      <VBox layoutX="50.0" layoutY="19.0" prefHeight="570.0" prefWidth="700.0" spacing="30.0">
+         <children>
+            <Button layoutX="64.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="250.0" prefWidth="700.0" text="Wyszukaj" />
+            <Button layoutX="74.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleFillOffer" prefHeight="250.0" prefWidth="700.0" text="Uzupełnij ofertę" />
+            <Button layoutX="84.0" layoutY="58.0" mnemonicParsing="false" onAction="#handleMyOffer" prefHeight="250.0" prefWidth="700.0" text="Moja oferta" />
+            <Button layoutX="94.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleFillDates" prefHeight="250.0" prefWidth="700.0" text="Uzupełnij terminarz" />
+            <Button layoutX="104.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleMyDates" prefHeight="250.0" prefWidth="700.0" text="Mój terminarz" />
+            <Button layoutX="114.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleContacts" prefHeight="250.0" prefWidth="700.0" text="Kontakt z klientem/prośby klientów " />
+            <Button mnemonicParsing="false" onAction="#handleFillAboutMe" prefHeight="250.0" prefWidth="700.0" text="Uzupełnij dane o sobie" />
+            <Button mnemonicParsing="false" onAction="#handleLogOut" prefHeight="250.0" prefWidth="700.0" text="Wyloguj" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

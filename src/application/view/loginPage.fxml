@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.loginPageController">
+   <children>
+      <Group>
+         <children>
+            <Button layoutX="323.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="375.0" text="Zaloguj" />
+            <Label layoutX="60.0" layoutY="161.0" prefHeight="39.0" prefWidth="239.0" text="Hasło" />
+            <TextField fx:id="Login" layoutX="323.0" layoutY="79.0" prefHeight="46.0" prefWidth="375.0" />
+            <Label layoutX="60.0" layoutY="79.0" prefHeight="46.0" prefWidth="221.0" text="Login" />
+            <PasswordField fx:id="Password" layoutX="323.0" layoutY="165.0" prefHeight="46.0" prefWidth="375.0" />
+         </children>
+      </Group>
+      <Button fx:id="Back" layoutX="38.0" layoutY="508.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Cofnij" />
+      <Label layoutX="289.0" layoutY="23.0" prefHeight="51.0" prefWidth="221.0" text="LOGOWANIE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
