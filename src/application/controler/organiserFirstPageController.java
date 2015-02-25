@@ -1,6 +1,7 @@
 package application.controler;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,14 +30,13 @@ public class organiserFirstPageController {
 	}
 
 	@FXML
-	private void handleMyParties() throws IOException {
+	private void handleMyParties() throws IOException, SQLException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("view/myPartiesPage.fxml"));
 		AnchorPane partiesPage = (AnchorPane) loader.load();
 		main.getRootLayout().setCenter(partiesPage);
-		//TODO: Remember about this controller
-		//searchPageController controller1 = loader.getController();
-		//controller1.setMainApp(main);
+		myPartiesPageController controller1 = loader.getController();
+		controller1.setMainApp(main);
 		main = null;
 	}
 
@@ -46,15 +46,20 @@ public class organiserFirstPageController {
 		loader.setLocation(Main.class.getResource("view/organisePage.fxml"));
 		AnchorPane partiesPage = (AnchorPane) loader.load();
 		main.getRootLayout().setCenter(partiesPage);
-		//TODO: Remember about this controller
-		//searchPageController controller1 = loader.getController();
-		//controller1.setMainApp(main);
+		organisePageController controller1 = loader.getController();
+		controller1.setMainApp(main);
 		main = null;
 	}
 
 	@FXML
-	private void handleFillAboutMe() {
-		//TODO: Write this shit and do it in Scene Builder
+	private void handleFillAboutMe() throws IOException {
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("view/organiserFillAboutPage.fxml"));
+		AnchorPane partiesPage = (AnchorPane) loader.load();
+		main.getRootLayout().setCenter(partiesPage);
+		organiserFillAboutPageController controller1 = loader.getController();
+		controller1.setMainApp(main);
+		main = null;
 	}
 
 	@FXML

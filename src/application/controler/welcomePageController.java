@@ -53,6 +53,7 @@ public class welcomePageController {
     	main.getRootLayout().setCenter(registerPage);
     	registerPageController controller1 = loader.getController(); 
     	controller1.setMainApp(main);
+    	controller1.fillCombo();
     	main=null; 
     }
 	    

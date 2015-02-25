@@ -21,15 +21,15 @@
             <HBox layoutX="60.0" layoutY="104.0" spacing="30.0" />
             <HBox layoutX="77.0" layoutY="116.0" spacing="40.0">
                <children>
-                  <RadioButton layoutX="60.0" layoutY="104.0" mnemonicParsing="false" text="Fotograf">
+                  <RadioButton id="Fotograf" fx:id="Fotograf" layoutX="60.0" layoutY="104.0" mnemonicParsing="false" text="Fotograf">
                      <toggleGroup>
                         <ToggleGroup fx:id="RadioButtons" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton layoutX="70.0" layoutY="114.0" mnemonicParsing="false" text="Restauracja/wynajem sali" toggleGroup="$RadioButtons" />
-                  <RadioButton layoutX="80.0" layoutY="124.0" mnemonicParsing="false" text="Catering" toggleGroup="$RadioButtons" />
-                  <RadioButton layoutX="90.0" layoutY="134.0" mnemonicParsing="false" text="Zespół" toggleGroup="$RadioButtons" />
-                  <RadioButton layoutX="100.0" layoutY="144.0" mnemonicParsing="false" text="Inne" toggleGroup="$RadioButtons" />
+                  <RadioButton fx:id="Restaurator" layoutX="70.0" layoutY="114.0" mnemonicParsing="false" text="Restauracja/wynajem sali" toggleGroup="$RadioButtons" />
+                  <RadioButton fx:id="Catering" layoutX="80.0" layoutY="124.0" mnemonicParsing="false" text="Catering" toggleGroup="$RadioButtons" />
+                  <RadioButton fx:id="Zespol" layoutX="90.0" layoutY="134.0" mnemonicParsing="false" text="Zespół" toggleGroup="$RadioButtons" />
+                  <RadioButton fx:id="Inne" layoutX="100.0" layoutY="144.0" mnemonicParsing="false" text="Inne" toggleGroup="$RadioButtons" />
                </children>
             </HBox>
          </children>
@@ -52,9 +52,9 @@
             <HBox layoutX="134.0" layoutY="257.0" spacing="40.0">
                <children>
                   <Text layoutX="59.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Od" />
-                  <TextField layoutX="142.0" layoutY="264.0" />
+                  <TextField fx:id="minCost" layoutX="142.0" layoutY="264.0" />
                   <Text layoutX="373.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do" />
-                  <TextField layoutX="451.0" layoutY="254.0" />
+                  <TextField fx:id="maxCost" layoutX="451.0" layoutY="254.0" />
                </children>
             </HBox>
          </children>
@@ -68,9 +68,9 @@
       <HBox layoutX="103.0" layoutY="424.0" spacing="40.0">
          <children>
             <Text layoutX="37.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Od" />
-            <DatePicker layoutX="65.0" layoutY="424.0" />
+            <DatePicker fx:id="minDate" layoutX="65.0" layoutY="424.0" />
             <Text layoutX="308.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do" />
-            <DatePicker layoutX="352.0" layoutY="424.0" />
+            <DatePicker fx:id="maxDate" layoutX="352.0" layoutY="424.0" />
          </children>
       </HBox>
    </children>

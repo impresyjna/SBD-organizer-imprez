@@ -7,15 +7,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.cateringSearchPageController">
    <children>
       <Text layoutX="308.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wyszukiwanie">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Button layoutX="26.0" layoutY="516.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="126.0" text="Cofnij" />
-      <Button layoutX="641.0" layoutY="516.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="126.0" text="Wyszukaj" />
+      <Button layoutX="26.0" layoutY="516.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="57.0" prefWidth="126.0" text="Cofnij" />
+      <Button layoutX="641.0" layoutY="516.0" mnemonicParsing="false" onAction="#handleSearchInDatabase" prefHeight="57.0" prefWidth="126.0" text="Wyszukaj" />
       <TextArea layoutX="25.0" layoutY="75.0" prefHeight="150.0" prefWidth="750.0" />
       <Text layoutX="41.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W ofercie cateringu">
          <font>
@@ -24,12 +24,12 @@
       </Text>
       <HBox layoutX="36.0" layoutY="140.0" spacing="20.0">
          <children>
-            <CheckBox layoutX="43.0" layoutY="120.0" mnemonicParsing="false" text="Dania obiadowe" />
-            <CheckBox layoutX="53.0" layoutY="130.0" mnemonicParsing="false" text="Dania na zimno" />
-            <CheckBox layoutX="63.0" layoutY="140.0" mnemonicParsing="false" text="Desery" />
-            <CheckBox layoutX="73.0" layoutY="150.0" mnemonicParsing="false" text="Śniadania" />
-            <CheckBox layoutX="83.0" layoutY="160.0" mnemonicParsing="false" text="Kolacje" />
-            <CheckBox layoutX="93.0" layoutY="170.0" mnemonicParsing="false" text="Owoce morza" />
+            <CheckBox fx:id="Dinner" layoutX="43.0" layoutY="120.0" mnemonicParsing="false" text="Dania obiadowe" />
+            <CheckBox fx:id="Cold" layoutX="53.0" layoutY="130.0" mnemonicParsing="false" text="Dania na zimno" />
+            <CheckBox fx:id="Desser" layoutX="63.0" layoutY="140.0" mnemonicParsing="false" text="Desery" />
+            <CheckBox fx:id="Breakfast" layoutX="73.0" layoutY="150.0" mnemonicParsing="false" text="Śniadania" />
+            <CheckBox fx:id="Supper" layoutX="83.0" layoutY="160.0" mnemonicParsing="false" text="Kolacje" />
+            <CheckBox fx:id="Seafood" layoutX="93.0" layoutY="170.0" mnemonicParsing="false" text="Owoce morza" />
          </children>
       </HBox>
    </children>

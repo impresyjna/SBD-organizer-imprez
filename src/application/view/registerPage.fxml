@@ -46,12 +46,12 @@
             </VBox>
             <VBox layoutX="407.0" layoutY="62.0" prefHeight="386.0" prefWidth="344.0" spacing="30.0">
                <children>
-                  <TextField layoutX="373.0" layoutY="61.0" prefHeight="50.0" prefWidth="300.0" />
-                  <PasswordField prefHeight="50.0" prefWidth="300.0" />
-                  <PasswordField prefHeight="50.0" prefWidth="300.0" />
-                  <TextField layoutX="373.0" layoutY="275.0" prefHeight="50.0" prefWidth="300.0" />
-                  <TextField layoutX="373.0" layoutY="344.0" prefHeight="50.0" prefWidth="300.0" />
-                  <ComboBox prefHeight="50.0" prefWidth="344.0" />
+                  <TextField fx:id="Login" layoutX="373.0" layoutY="61.0" prefHeight="50.0" prefWidth="300.0" />
+                  <PasswordField fx:id="Password" prefHeight="50.0" prefWidth="300.0" />
+                  <PasswordField fx:id="RepeatPassword" prefHeight="50.0" prefWidth="300.0" />
+                  <TextField fx:id="Mail" layoutX="373.0" layoutY="275.0" prefHeight="50.0" prefWidth="300.0" />
+                  <TextField fx:id="Number" layoutX="373.0" layoutY="344.0" prefHeight="50.0" prefWidth="300.0" />
+                  <ComboBox fx:id="Profession" prefHeight="50.0" prefWidth="344.0" promptText="Wybierz profesję" />
                </children>
             </VBox>
          </children>

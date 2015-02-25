@@ -8,7 +8,7 @@ public class User {
 	private String password; 
 	private String mail; 
 	private String telephone; 
-	private String profession;
+	private String profession = "Niezalogowany";
 	
 	public static User getInstance()
 	{

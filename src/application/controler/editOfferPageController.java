@@ -10,6 +10,6 @@ public class editOfferPageController {
 		this.main = mainApp;
 	}
 
-	// TODO: Connect controller with view
+	// TODO: Connect controller with view (after searching in db) 
 
 }

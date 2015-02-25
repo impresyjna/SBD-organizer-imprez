@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.cateringFillAboutPageController">
+   <children>
+      <TextArea layoutX="25.0" layoutY="312.0" prefHeight="114.0" prefWidth="746.0" />
+      <Button layoutX="25.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Button layoutX="647.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="60.0" prefWidth="130.0" text="Aktualizuj" />
+      <Group layoutX="-13.0" layoutY="75.0">
+         <children>
+            <Label layoutX="55.0" layoutY="155.0" text="Strona internetowa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="54.0" text="Nazwa firmy">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Label layoutX="261.0" layoutY="14.0" text="Uzupełnij dane o sobie">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="34.0" layoutY="369.0" spacing="20.0">
+         <children>
+            <CheckBox fx:id="Dinner" layoutX="43.0" layoutY="120.0" mnemonicParsing="false" text="Dania obiadowe" />
+            <CheckBox fx:id="Cold" layoutX="53.0" layoutY="130.0" mnemonicParsing="false" text="Dania na zimno" />
+            <CheckBox fx:id="Desser" layoutX="63.0" layoutY="140.0" mnemonicParsing="false" text="Desery" />
+            <CheckBox fx:id="Breakfast" layoutX="73.0" layoutY="150.0" mnemonicParsing="false" text="Śniadania" />
+            <CheckBox fx:id="Supper" layoutX="83.0" layoutY="160.0" mnemonicParsing="false" text="Kolacje" />
+            <CheckBox fx:id="Seafood" layoutX="93.0" layoutY="170.0" mnemonicParsing="false" text="Owoce morza" />
+         </children>
+      </HBox>
+      <Text layoutX="31.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dania w menu">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Name" layoutX="271.0" layoutY="120.0" prefHeight="60.0" prefWidth="500.0" />
+      <TextField fx:id="Website" layoutX="271.0" layoutY="215.0" prefHeight="60.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

@@ -1,6 +1,7 @@
 package application;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import entities.User;
 import application.controler.welcomePageController;
@@ -23,13 +24,13 @@ public class Main extends Application {
 	}
 
 	@Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws SQLException {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Organizer imprez");
         dbmenager.dbstart();
-
         initRootLayout();
         showWelcomePage();
+        
     }
 
     /**

@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.organisePageController">
    <children>
-      <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
       <Text layoutX="305.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nowa impreza">
          <font>
             <Font size="30.0" />
@@ -17,13 +17,13 @@
       <TextArea editable="false" layoutX="25.0" layoutY="71.0" prefHeight="130.0" prefWidth="750.0" />
       <TextArea editable="false" layoutX="25.0" layoutY="224.0" prefHeight="130.0" prefWidth="750.0" />
       <TextArea editable="false" layoutX="25.0" layoutY="377.0" prefHeight="130.0" prefWidth="750.0" />
-      <Button layoutX="645.0" layoutY="511.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="Organizuj" />
+      <Button layoutX="645.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleOrganise" prefHeight="60.0" prefWidth="130.0" text="Organizuj" />
       <Text layoutX="40.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa imprezy">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <TextField layoutX="40.0" layoutY="122.0" prefHeight="45.0" prefWidth="714.0" />
+      <TextField fx:id="Name" layoutX="40.0" layoutY="122.0" prefHeight="45.0" prefWidth="714.0" text=" " />
       <Text layoutX="40.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data wydarzenia(pole nieobowiązkowe)">
          <font>
             <Font size="20.0" />
@@ -34,7 +34,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <DatePicker layoutX="40.0" layoutY="285.0" prefHeight="45.0" prefWidth="714.0" />
-      <TextField layoutX="40.0" layoutY="442.0" prefHeight="45.0" prefWidth="714.0" />
+      <DatePicker fx:id="When" layoutX="40.0" layoutY="285.0" prefHeight="45.0" prefWidth="714.0" />
+      <TextField fx:id="Place" layoutX="40.0" layoutY="442.0" prefHeight="45.0" prefWidth="714.0" text=" " />
    </children>
 </AnchorPane>

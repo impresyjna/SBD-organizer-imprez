@@ -1,29 +1,59 @@
 package entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Party {
-	private Room where; 
-	private Date when; 
-	private List<Company> working=new ArrayList<Company>();
+	private int partyId; 
+	private String name; 
+	private int day; 
+	private int month; 
+	private int year; 
+	private String place;
 	
-	public Room getWhere() {
-		return where;
+	public Party(int partyId, String name, int day, int month, int year,
+			String place) {
+		this.partyId = partyId;
+		this.name = name;
+		this.day = day;
+		this.month = month;
+		this.year = year;
+		this.place = place;
 	}
-	public void setWhere(Room where) {
-		this.where = where;
+	
+	public int getPartyId() {
+		return partyId;
 	}
-	public Date getWhen() {
-		return when;
+	public int getDay() {
+		return day;
 	}
-	public void setWhen(Date when) {
-		this.when = when;
+	public int getMonth() {
+		return month;
 	}
-	public List<Company> getWorking() {
-		return working;
+	public int getYear() {
+		return year;
 	}
-	public void setWorking(List<Company> working) {
-		this.working = working;
+	public String getPlace() {
+		return place;
+	}
+	public void setPartyId(int partyId) {
+		this.partyId = partyId;
+	}
+	public void setDay(int day) {
+		this.day = day;
+	}
+	public void setMonth(int month) {
+		this.month = month;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public void setPlace(String place) {
+		this.place = place;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	} 
+	
+	
 }

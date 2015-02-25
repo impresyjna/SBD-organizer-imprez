@@ -8,13 +8,69 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.resultPageController">
    <children>
-      <Button layoutX="22.0" layoutY="516.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Button layoutX="14.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
       <Text layoutX="262.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wyniki wyszukiwania">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
+      <TableView fx:id="Result" layoutX="9.0" layoutY="61.0" prefHeight="200.0" prefWidth="779.0">
+        <columns>
+            <TableColumn fx:id="ProductId" prefWidth="75.0" text="Id produktu" />
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Nazwa" />
+          <TableColumn fx:id="Price" prefWidth="75.0" text="Cena" />
+            <TableColumn fx:id="Details" prefWidth="75.0" text="Szczegóły" />
+            <TableColumn fx:id="Day" prefWidth="75.0" text="Dzień" />
+            <TableColumn fx:id="Month" prefWidth="75.0" text="Miesiąc" />
+            <TableColumn fx:id="Year" prefWidth="75.0" text="Rok" />
+            <TableColumn fx:id="CompanyName" prefWidth="75.0" text="Przedsiębiorca" />
+            <TableColumn fx:id="Website" prefWidth="75.0" text="Strona internetowa" />
+            <TableColumn fx:id="Phone" prefWidth="75.0" text="Telefon" />
+            <TableColumn fx:id="Mail" prefWidth="75.0" text="Mail" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextArea layoutX="9.0" layoutY="269.0" prefHeight="255.0" prefWidth="779.0" />
+      <VBox layoutX="22.0" layoutY="279.0">
+         <children>
+            <Label layoutX="22.0" layoutY="279.0" text="Id produktu" />
+            <Label layoutX="32.0" layoutY="289.0" text="Nazwa" />
+            <Label layoutX="42.0" layoutY="299.0" text="Cena" />
+            <Label layoutX="52.0" layoutY="309.0" text="Szczegóły" />
+            <Label layoutX="62.0" layoutY="319.0" text="Dzień" />
+            <Label layoutX="72.0" layoutY="329.0" text="Miesiąc" />
+            <Label layoutX="82.0" layoutY="339.0" text="Rok" />
+            <Label layoutX="92.0" layoutY="349.0" text="Nazwa przedsiębiorstwa" />
+            <Label layoutX="102.0" layoutY="359.0" text="Strona internetowa" />
+            <Label layoutX="112.0" layoutY="369.0" text="Telefon" />
+            <Label text="Mail" />
+         </children>
+      </VBox>
+      <VBox layoutX="245.0" layoutY="279.0">
+         <children>
+            <Label fx:id="ProductIdLabel" layoutX="22.0" layoutY="279.0" text="Label" />
+            <Label fx:id="NameLabel" layoutX="32.0" layoutY="289.0" text="Label" />
+            <Label fx:id="PriceLabel" layoutX="42.0" layoutY="299.0" text="Label" />
+            <Label fx:id="DetailsLabel" layoutX="52.0" layoutY="309.0" text="Label" />
+            <Label fx:id="DayLabel" layoutX="62.0" layoutY="319.0" text="Label" />
+            <Label fx:id="MonthLabel" layoutX="72.0" layoutY="329.0" text="Label" />
+            <Label fx:id="YearLabel" layoutX="82.0" layoutY="339.0" text="Label" />
+            <Label fx:id="CompanyNameLabel" layoutX="92.0" layoutY="349.0" text="Label" />
+            <Label fx:id="WebsiteLabel" layoutX="102.0" layoutY="359.0" text="Label" />
+            <Label fx:id="PhoneLabel" layoutX="112.0" layoutY="369.0" text="Label" />
+            <Label fx:id="MailLabel" text="Label" />
+         </children>
+      </VBox>
+      <Button fx:id="ReserveButton" layoutX="656.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleReserve" prefHeight="60.0" prefWidth="130.0" text="Rezerwuj" />
+      <ComboBox fx:id="PartyCombo" layoutX="245.0" layoutY="536.0" prefHeight="40.0" prefWidth="401.0" promptText="Wybierz imprezę do rezerwacji" />
+      <Label fx:id="PartyLabel" layoutX="154.0" layoutY="542.0" text="Impreza">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

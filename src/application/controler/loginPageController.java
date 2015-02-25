@@ -40,7 +40,7 @@ public class loginPageController {
 	private void handleLogin() throws IOException
 	{
 		try {
-			main.getDbmenager().query("select * from uzytkownicy where login='" + Login.getText() + "' and haslo='" + Password.getText() + "'");
+			main.getDbmenager().selectQuery("select * from uzytkownicy where login='" + Login.getText() + "' and haslo='" + Password.getText() + "'");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

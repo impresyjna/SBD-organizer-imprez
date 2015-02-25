@@ -6,13 +6,49 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.myDatesPageController">
    <children>
-      <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Button layoutX="17.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
       <Text layoutX="312.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moje terminy">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
+      <TableView fx:id="Dates" layoutX="13.0" layoutY="71.0" prefHeight="200.0" prefWidth="768.0">
+        <columns>
+          <TableColumn fx:id="ProductId" prefWidth="75.0" text="Id produktu" />
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Nazwa produktu" />
+            <TableColumn fx:id="Day" prefWidth="75.0" text="Dzień" />
+            <TableColumn fx:id="Month" prefWidth="75.0" text="Miesiąc" />
+            <TableColumn fx:id="Year" prefWidth="75.0" text="Rok" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextArea editable="false" layoutX="13.0" layoutY="277.0" prefHeight="200.0" prefWidth="768.0" />
+      <Text layoutX="27.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pojedynczy termin">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <VBox layoutX="21.0" layoutY="323.0" spacing="5.0">
+         <children>
+            <Label layoutX="21.0" layoutY="323.0" text="Id produktu" />
+            <Label layoutX="31.0" layoutY="333.0" text="Nazwa produktu" />
+            <Label layoutX="41.0" layoutY="343.0" text="Dzień dostępności" />
+            <Label layoutX="51.0" layoutY="353.0" text="Miesiąc" />
+            <Label layoutX="61.0" layoutY="363.0" text="Rok" />
+         </children>
+      </VBox>
+      <VBox layoutX="172.0" layoutY="323.0" spacing="5.0">
+         <children>
+            <Label fx:id="ProductIdLabel" layoutX="21.0" layoutY="323.0" text="Label" />
+            <Label fx:id="NameLabel" layoutX="31.0" layoutY="333.0" text="Label" />
+            <Label fx:id="DayLabel" layoutX="41.0" layoutY="343.0" text="Label" />
+            <Label fx:id="MonthLabel" layoutX="51.0" layoutY="353.0" text="Label" />
+            <Label fx:id="YearLabel" layoutX="61.0" layoutY="363.0" text="Label" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

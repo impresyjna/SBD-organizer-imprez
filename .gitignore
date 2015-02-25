@@ -51,3 +51,11 @@ bin/application/views/photographSearchPage.fxml
 bin/application/views/photographSearchPage.fxml
 bin/application/views/photographSearchPage.fxml
 bin/application/views/photographSearchPage.fxml
+bin/application/view/bandFillAboutPage.fxml
+bin/application/view/cateringFillAboutPage.fxml
+bin/application/view/organiserFillAboutPage.fxml
+bin/application/view/otherFillAboutPage.fxml
+bin/application/view/photographFillAboutPage.fxml
+bin/application/view/restorerFillAboutPage.fxml
+bin/application/view/restorerFillOfferPage.fxml
+bin/application/view/restorerMyOfferPage.fxml

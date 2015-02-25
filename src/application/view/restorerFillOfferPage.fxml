@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.restorerFillOfferPageController">
+   <children>
+      <TextArea editable="false" layoutX="25.0" layoutY="284.0" prefHeight="104.0" prefWidth="750.0" />
+      <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Text layoutX="324.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nowa sala">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextArea editable="false" layoutX="25.0" layoutY="403.0" prefHeight="95.0" prefWidth="750.0" />
+      <TextArea editable="false" layoutX="25.0" layoutY="170.0" prefHeight="104.0" prefWidth="750.0" />
+      <TextArea editable="false" layoutX="25.0" layoutY="59.0" prefHeight="104.0" prefWidth="750.0" />
+      <Text layoutX="31.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cena">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szczegóły">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Name" layoutX="50.0" layoutY="91.0" prefHeight="50.0" prefWidth="700.0" text=" " />
+      <TextField fx:id="Price" layoutX="42.0" layoutY="202.0" prefHeight="50.0" prefWidth="700.0" text=" " />
+      <TextField fx:id="Details" layoutX="42.0" layoutY="438.0" prefHeight="50.0" prefWidth="700.0" text=" " />
+      <Button layoutX="645.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="60.0" prefWidth="130.0" text="Dodaj" />
+      <TextField fx:id="Size" layoutX="42.0" layoutY="321.0" prefHeight="50.0" prefWidth="700.0" text=" " />
+      <Text layoutX="38.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pojemność sali(ile osób pomieści) ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

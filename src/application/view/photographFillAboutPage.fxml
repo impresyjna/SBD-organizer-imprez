@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.photographFillAboutPageController">
+   <children>
+      <TextArea layoutX="42.0" layoutY="291.0" prefHeight="146.0" prefWidth="717.0" />
+      <Button layoutX="25.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Button layoutX="647.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="60.0" prefWidth="130.0" text="Aktualizuj" />
+      <Group layoutX="-13.0" layoutY="75.0">
+         <children>
+            <Label layoutX="55.0" layoutY="155.0" text="Strona internetowa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="54.0" text="Nazwa firmy">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Label layoutX="261.0" layoutY="14.0" text="Uzupełnij dane o sobie">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+       <Group layoutX="14.0" layoutY="223.0">
+         <children>
+            <CheckBox fx:id="Communion" layoutX="260.0" layoutY="163.0" mnemonicParsing="false" text="Komunie" />
+            <CheckBox fx:id="Baptism" layoutX="123.0" layoutY="163.0" mnemonicParsing="false" text="Chrzciny" />
+            <CheckBox fx:id="Birthday" layoutX="386.0" layoutY="163.0" mnemonicParsing="false" text="18-nastki" />
+            <CheckBox fx:id="Sport" layoutX="484.0" layoutY="120.0" mnemonicParsing="false" text="Sportowa" />
+            <CheckBox fx:id="Fashion" layoutX="644.0" layoutY="120.0" mnemonicParsing="false" text="Fashion" />
+            <CheckBox fx:id="Document" layoutX="216.0" layoutY="120.0" mnemonicParsing="false" text="Dokumentalna/wydarzeń" />
+            <CheckBox fx:id="Prom" layoutX="542.0" layoutY="163.0" mnemonicParsing="false" text="Studniówki" />
+            <CheckBox fx:id="Wedding" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" text="Ślubna" />
+         </children>
+      </Group>
+      <Text layoutX="50.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zakres działania">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Name" layoutX="261.0" layoutY="113.0" prefHeight="60.0" prefWidth="500.0" />
+      <TextField fx:id="Website" layoutX="261.0" layoutY="206.0" prefHeight="60.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

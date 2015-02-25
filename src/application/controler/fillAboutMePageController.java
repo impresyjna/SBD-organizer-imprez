@@ -10,5 +10,5 @@ public class fillAboutMePageController {
 		this.main = mainApp;
 	}
 
-	// TODO: Connect controller with views and do this in Scene Builder
+	// TODO: Connect controller with views and do this in Scene Builder (at the end of writing this app) 
 }

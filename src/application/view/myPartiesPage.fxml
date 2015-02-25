@@ -6,13 +6,48 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.myPartiesPageController">
    <children>
-      <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
+      <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
       <Text layoutX="310.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moje imprezy">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
+      <TableView fx:id="Party" layoutX="27.0" layoutY="69.0" prefHeight="213.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="PartyId" prefWidth="75.0" text="Id imprezy" />
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Nazwa" />
+            <TableColumn fx:id="Day" prefWidth="75.0" text="Dzień" />
+            <TableColumn fx:id="Month" prefWidth="75.0" text="Miesiąc" />
+            <TableColumn fx:id="Year" prefWidth="75.0" text="Rok" />
+            <TableColumn fx:id="Place" prefWidth="75.0" text="Miejsce" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="26.0" layoutY="293.0" text="Pojedyncza impreza">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="SingleParty" layoutX="26.0" layoutY="330.0" prefHeight="163.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="SProductId" prefWidth="75.0" text="Id produktu" />
+          <TableColumn fx:id="SProductName" prefWidth="75.0" text="Nazwa produktu" />
+            <TableColumn fx:id="SCompanyName" prefWidth="75.0" text="Nazwa firmy" />
+            <TableColumn fx:id="SPrice" prefWidth="75.0" text="Cena" />
+            <TableColumn fx:id="SDay" prefWidth="75.0" text="Dzień" />
+            <TableColumn fx:id="SMonth" prefWidth="75.0" text="Miesiąc" />
+            <TableColumn fx:id="SYear" prefWidth="75.0" text="Rok" />
+            <TableColumn fx:id="SWebsite" prefWidth="75.0" text="Strona internetowa" />
+            <TableColumn fx:id="SNumber" prefWidth="75.0" text="Telefon" />
+            <TableColumn fx:id="SState" prefWidth="75.0" text="Stan rezerwacji" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
    </children>
 </AnchorPane>

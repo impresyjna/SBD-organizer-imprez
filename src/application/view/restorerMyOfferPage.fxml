@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.myOfferPageController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.restorerMyOfferPageController">
    <children>
       <Button layoutX="27.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="130.0" text="Menu główne" />
       <Text layoutX="322.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moje usługi">
@@ -20,6 +20,7 @@
           <TableColumn fx:id="Name" prefWidth="75.0" text="Nazwa" />
             <TableColumn fx:id="Price" prefWidth="75.0" text="Cena" />
             <TableColumn fx:id="Details" prefWidth="75.0" text="Szczegóły" />
+            <TableColumn fx:id="Size" prefWidth="75.0" text="Ilość osób" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -31,21 +32,23 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <VBox layoutX="27.0" layoutY="340.0" spacing="20.0">
+      <VBox layoutX="27.0" layoutY="340.0" spacing="10.0">
          <children>
             <Label layoutX="27.0" layoutY="351.0" text="Id produktu" />
             <Label layoutX="27.0" layoutY="372.0" text="Cena" />
             <Label layoutX="27.0" layoutY="399.0" text="Nazwa" />
             <Label layoutX="28.0" layoutY="462.0" text="Szczegóły" />
+            <Label text="Ilość osob" />
          </children>
       </VBox>
       <Button layoutX="639.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="60.0" prefWidth="130.0" text="Usuń" />
-      <VBox layoutX="137.0" layoutY="340.0" spacing="20.0">
+      <VBox layoutX="137.0" layoutY="340.0" spacing="10.0">
          <children>
             <Label fx:id="ProductIdLabel" layoutX="27.0" layoutY="351.0" text="Id produktu" />
             <Label fx:id="PriceLabel" layoutX="27.0" layoutY="372.0" text="Cena" />
             <Label fx:id="NameLabel" layoutX="27.0" layoutY="399.0" text="Nazwa" />
             <Label fx:id="DetailsLabel" layoutX="28.0" layoutY="462.0" text="Szczegóły" />
+            <Label fx:id="SizeLabel" text="Ilość osób" />
          </children>
       </VBox>
    </children>
